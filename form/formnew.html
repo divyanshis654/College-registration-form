@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formnew.css">
+    <title>MIT WORLD PEACE UNIVERSITY</title>
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="University Logo" class="logo">
+    </header>
+
+    <div class="container">
+        <h1>STUDENT REGISTRATION FORM</h1>
+        <hr>
+
+        <div class="form-container">
+            <form id="myForm">
+                <h2>Basic Information</h2>
+                <h3>Name Details</h3>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name"><br>
+                <span class="error" id="firstNameError"></span><br>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name"><br>
+                <span class="error" id="lastNameError"></span><br>
+
+                <h3>Gender</h3>
+                <div class="gender-container">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+
+                <h3>Address</h3>
+                <label for="street-address">Street Address</label>
+                <input type="text" id="street-address" name="street-address" placeholder="Enter your street address"><br>
+                <span class="error" id="streetAddressError"></span><br>
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city"><br>
+                <span class="error" id="cityError"></span><br>
+
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="Enter your state"><br>
+                <span class="error" id="stateError"></span><br>
+
+                <label for="zip-code">Zip Code</label>
+                <input type="text" id="zip-code" name="zip-code" placeholder="Enter your zip code"><br>
+                <span class="error" id="zipCodeError"></span><br>
+
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" placeholder="Enter your country"><br>
+                <span class="error" id="countryError"></span><br>
+
+                <h3>Birth Date</h3>
+                <input type="date" id="date" min="2015-01-01" max="2025-12-31" step="1"><br><br>
+
+                <label for="student-reg-num">Student Registration Number</label>
+                <input type="text" id="student-reg-num" name="student-reg-num" placeholder="Enter your registration number"><br>
+                <span class="error" id="regnumError"></span><br>
+
+                <label for="contact-number">Contact Number</label>
+                <input type="text" id="contact-number" name="contact-number" placeholder="Enter your contact number"><br>
+                <span class="error" id="contactError"></span><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+                <span class="error" id="emailError"></span><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+                <span class="error" id="passwordError"></span><br>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password"><br>
+                <span class="error" id="confirmPasswordError"></span><br>
+
+                <h3>Courses</h3>
+                <div class="courses-container">
+                    <input type="checkbox" id="c1" name="c1" value="Data Science">
+                    <label for="c1"> Data Science</label>
+                    <input type="checkbox" id="c2" name="c2" value="Artificial Intelligence">
+                    <label for="c2"> Artificial Intelligence</label><br>
+                    <input type="checkbox" id="c3" name="c3" value="Machine Learning">
+                    <label for="c3"> Machine Learning</label>
+                    <input type="checkbox" id="c4" name="c4" value="Cyber Security">
+                    <label for="c4"> Cyber Security</label><br>
+                    <input type="checkbox" id="c5" name="c5" value="AIML">
+                    <label for="c5"> AIML</label>
+                    <input type="checkbox" id="c6" name="c6" value="Full Stack Development">
+                    <label for="c6"> Full Stack Development</label>
+                </div><br>
+
+                <h3>Additional Information</h3>
+                <label for="guardian-name">Guardian's Name:</label>
+                <input type="text" id="guardian-name" name="guardian-name" placeholder="Enter guardian's name"><br>
+                <span class="error" id="guardianNameError"></span><br>
+
+                <label for="guardian-contact">Guardian's Contact Number:</label>
+                <input type="text" id="guardian-contact" name="guardian-contact" placeholder="Enter guardian's contact number"><br>
+                <span class="error" id="guardianContactError"></span><br>
+
+                <label for="guardian-email">Guardian's Email:</label>
+                <input type="email" id="guardian-email" name="guardian-email" placeholder="Enter guardian's email"><br>
+                <span class="error" id="guardianEmailError"></span><br>
+
+                <label for="emergency-contact">Emergency Contact Number:</label>
+                <input type="text" id="emergency-contact" name="emergency-contact" placeholder="Enter emergency contact number"><br>
+                <span class="error" id="emergencyContactError"></span><br>
+
+                <footer>
+                    <input type="submit" value="Submit">
+                </footer>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</html>
